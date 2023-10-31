@@ -17,7 +17,7 @@ func main() {
 
 // Schedule a method to run periodically
 func simpleCron() {
-	fmt.Println(time.Now().String() + "Start App - Version SimpleCron")
+	fmt.Println(time.Now().String() + " Start App - Version SimpleCron")
 	c := cron.New()
 	c.AddFunc("@every 1m10s", task)
 	go c.Start()
